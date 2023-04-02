@@ -11,10 +11,6 @@
         Me.Text = String.Format("About {0}", ApplicationTitle)
     End Sub
     'Handling the positioning, exit...
-    Private Sub OKButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Close()
-    End Sub
-
     Private Sub Exit_MouseHover(sender As Object, e As EventArgs) Handles _Exit.MouseHover
         _Exit.ForeColor = Color.Red
     End Sub
