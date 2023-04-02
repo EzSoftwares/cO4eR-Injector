@@ -1,6 +1,6 @@
 ﻿Public NotInheritable Class About
 
-    Private Sub AboutBox1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub About_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ' Set the title of the form.
         Dim ApplicationTitle As String
         If My.Application.Info.Title <> "" Then
@@ -24,7 +24,7 @@
     End Sub
 
     Private Sub Exit_Click(sender As Object, e As EventArgs) Handles _Exit.Click
-        Application.Exit()
+        Me.Close()
     End Sub
     Dim mousePos As Point
     Private Sub Title_MouseDown(sender As Object, e As MouseEventArgs) Handles Title.MouseDown
